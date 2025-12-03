@@ -52,7 +52,7 @@ rect.addEventListener('mousemove', function(details){
         curentColor = `RGB(${red}, ${green}, ${blue} | #${((1 << 24 )+ (red << 16 ) + (green << 8 ) + blue).toString(16).slice(1)})`
 });
 
-// When circle is cliked  freeze color and show 🇮🇹 
+// When circle is cliked  freeze color and show 
 rect.addEventListener('click', function(details){
     display.value = curentColor;  // Freeze Color
     display.style.left = rect.getBoundingClientRect().right + 10 + "px";
